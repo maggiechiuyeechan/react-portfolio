@@ -1,0 +1,49 @@
+// *{
+//     border: 1px solid red;
+// }
+
+@import "./colors.scss";
+
+
+//////////////////
+//// GENERAL ////
+//////////////////
+
+@import "./setup.scss";
+@import "./fonts.scss";
+@import "./animate";
+
+//////////////////
+//// PAGES ////
+//////////////////
+@import "./gridLayout.scss";
+@import "homePage";
+@import "projects";
+
+//////////////////
+//// COMPONENT ////
+//////////////////
+@import "footer";
+@import "./NavBar.scss";
+
+
+.route-wrapper {
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .route-wrapper > div {
+    position: absolute;
+    pointer-events: none;
+}
+
+
+//   .fade-enter {
+//     opacity: 0;
+//     z-index: 1;
+//   }
+  
+//   .fade-enter.fade-enter-active {
+//     opacity: 1;
+//     transition: opacity 250ms ease-in;
+//   }
